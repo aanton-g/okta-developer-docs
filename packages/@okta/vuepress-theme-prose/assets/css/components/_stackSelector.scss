@@ -4,6 +4,11 @@ $dropdown-toggle-border: #8c8c96;
 .stack-selector {
   padding-left: 0;
   z-index: 10;
+  margin-bottom: 1.5rem;
+
+  @include media("<desktop"){
+    margin: 0;
+  }
 
   @include media("<tablet"){
     margin-bottom: 1.5rem;
@@ -24,9 +29,16 @@ $dropdown-toggle-border: #8c8c96;
     }
     .instructions-label {
       flex: 0;
-      padding: 0.65rem 0.5rem 0.5rem 0;
+      padding: 0 1rem 1rem;
       font-weight: bold;
       white-space: nowrap;
+      font-size: 1rem;
+      color: #2f3f4a;
+      font-weight: 600;
+
+      @include media("<desktop"){
+        padding: 0 1rem 1.5rem 0;
+      }
     }
     .icon {
       width: 24px;

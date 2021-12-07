@@ -7,8 +7,6 @@ title: Basic sign-in flow using the password factor
 <ApiLifecycle access="ie" /><br>
 <ApiLifecycle access="Limited GA" /><br>
 
-<StackSelector class="cleaner-selector"/>
-
 The basic user sign-in request is the simplest of all use cases and is the first use case that you should try after you install the SDK.
 
 This use case requires the password factor.

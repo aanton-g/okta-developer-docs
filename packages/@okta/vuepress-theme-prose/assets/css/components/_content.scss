@@ -96,6 +96,19 @@
       padding-bottom: 8px;
     }
 
+    .sticky-content-mobile {
+      display: none;
+      position: sticky;
+      top: 0;
+      padding: 40px 0 10px;
+      background: white;
+      z-index: 1;
+
+      @include media("<desktop") {
+        display: block;
+      }
+    }
+
     @include media(">=tablet") {
       margin: 3rem $big-spacing;
       width: 64%;

@@ -26,17 +26,17 @@
             <Sidebar />
           </div>
           <div class="content-area">
-            <div v-if="!appContext.isInMobileViewport" class="sticky-content">
-              <PageTitle />
-              <StackSelector v-if="$page.hasStackContent" />
-            </div>
+            <PageTitle v-if="!appContext.isInMobileViewport" />
 
-            <div v-if="appContext.isInMobileViewport" class="sticky-content">
+            <div v-if="appContext.isInMobileViewport">
               <Breadcrumb />
-              <StackSelector v-if="$page.hasStackContent" />
             </div>
 
             <PageTitle v-if="appContext.isInMobileViewport" />
+            <div v-if="appContext.isInMobileViewport" class="sticky-content">
+              <StackSelector v-if="$page.hasStackContent" />
+            </div>
+            
             <MobileOnThisPage />
 
             <ContentPage />

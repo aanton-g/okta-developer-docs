@@ -7,8 +7,6 @@ title: Sign in with Facebook
 <ApiLifecycle access="ie" /><br>
 <ApiLifecycle access="Limited GA" /><br>
 
-<StackSelector class="cleaner-selector"/>
-
 You can build your app to allow users to sign in with the Facebook social Identity Provider.
 
 ## Configuration updates
